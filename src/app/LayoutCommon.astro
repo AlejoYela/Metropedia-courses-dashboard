@@ -17,7 +17,7 @@ const { class: clazz } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={pkg.description} />
 		<meta name="" content={pkg.description} />
-		<link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+		<link rel="icon" type="image/svg+xml" href="/logos/logo-metropedia.svg" />
 		<link
 			rel="sitemap"
 			type="application/xml"
@@ -46,10 +46,10 @@ const { class: clazz } = Astro.props;
 		class:list={[
 			//
 			clazz,
-			'bg-gray-50 dark:bg-gray-800',
+			'bg-neutral-50 dark:bg-neutral-800',
 			'scrollbar scrollbar-w-3 scrollbar-thumb-rounded-[0.25rem]',
-			'scrollbar-track-slate-200  scrollbar-thumb-gray-400',
-			'dark:scrollbar-track-gray-900 dark:scrollbar-thumb-gray-700',
+			'scrollbar-track-zinc-200  scrollbar-thumb-neutral-400',
+			'dark:scrollbar-track-neutral-900 dark:scrollbar-thumb-neutral-700',
 		]}
 	>
 		<slot />

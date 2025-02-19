@@ -573,7 +573,7 @@ const getTrafficChannelsChartOptions = () => {
 
 	if (document.documentElement.classList.contains('dark')) {
 		trafficChannelsChartColors = {
-			strokeColor: '#1f2937',
+			strokeColor: '#252627',
 		};
 	} else {
 		trafficChannelsChartColors = {

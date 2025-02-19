@@ -13,17 +13,18 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					50: '#eff6ff',
-					100: '#dbeafe',
-					200: '#bfdbfe',
-					300: '#93c5fd',
-					400: '#60a5fa',
-					500: '#3b82f6',
-					600: '#2563eb',
-					700: '#1d4ed8',
-					800: '#1e40af',
-					900: '#1e3a8a',
+					50: '#fff0d0',
+					100: '#ffe2a5',
+					200: '#ffd780',
+					300: '#ffcd5d',
+					400: '#ffc23e',
+					500: '#ffb81d',
+					600: '#fcb316',
+					700: '#e79e00',
+					800: '#bc8000',
+					900: '#956500',
 				},
+				secondary:"#252627"
 			},
 			fontFamily: {
 				sans: [
@@ -92,7 +93,7 @@ module.exports = {
 		'w-1/2',
 		'rounded-l-lg',
 		'rounded-r-lg',
-		'bg-gray-200',
+		'bg-neutral-200',
 		'grid-cols-4',
 		'grid-cols-7',
 		'h-6',

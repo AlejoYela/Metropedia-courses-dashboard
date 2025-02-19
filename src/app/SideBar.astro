@@ -11,18 +11,18 @@ import { url } from '../lib/data.js';
 	aria-label="Sidebar"
 >
 	<div
-		class="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+		class="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-neutral-200 dark:bg-neutral-800 dark:border-neutral-700"
 	>
 		<div
 			class:list={[
 				'flex flex-col flex-1 pt-5 pb-28 overflow-y-auto',
 				'scrollbar scrollbar-w-2 scrollbar-thumb-rounded-[0.1667rem]',
-				'scrollbar-thumb-slate-200 scrollbar-track-gray-400',
-				'dark:scrollbar-thumb-slate-900 dark:scrollbar-track-gray-800',
+				'scrollbar-thumb-zinc-200 scrollbar-track-neutral-400',
+				'dark:scrollbar-thumb-zinc-900 dark:scrollbar-track-neutral-800',
 			]}
 		>
 			<div
-				class="flex-1 px-3 space-y-1 bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700"
+				class="flex-1 px-3 space-y-1 bg-white divide-y divide-neutral-200 dark:bg-neutral-800 dark:divide-neutral-700"
 			>
 				<ul class="pb-2 space-y-2">
 					<li>
@@ -33,7 +33,7 @@ import { url } from '../lib/data.js';
 									class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
 								>
 									<svg
-										class="w-5 h-5 text-gray-500"
+										class="w-5 h-5 text-neutral-500"
 										fill="currentColor"
 										viewBox="0 0 20 20"
 										xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ import { url } from '../lib/data.js';
 									type="text"
 									name="email"
 									id="mobile-search"
-									class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-200 dark:focus:ring-primary-500 dark:focus:border-primary-500"
+									class="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-neutral-200 dark:focus:ring-primary-500 dark:focus:border-primary-500"
 									placeholder="Search"
 								/>
 							</div>
@@ -56,11 +56,11 @@ import { url } from '../lib/data.js';
 					<li>
 						<a
 							href={url()}
-							class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center p-2 text-base text-neutral-900 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 						>
 							<svg
 								fill="currentColor"
-								class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg"
 								aria-hidden="true"
@@ -72,34 +72,34 @@ import { url } from '../lib/data.js';
 									d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
 								></path>
 							</svg>
-							<span class="ml-3" sidebar-toggle-item>Welcome</span>
+							<span class="ml-3" sidebar-toggle-item>Inicio</span>
 						</a>
 					</li>
 					<li>
 						<a
 							href={url('dashboard')}
-							class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center p-2 text-base text-neutral-900 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 						>
 							<svg
-								class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
 								><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path
 									d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg
 							>
-							<span class="ml-3" sidebar-toggle-item>Dashboard</span>
+							<span class="ml-3" sidebar-toggle-item>Panel</span>
 						</a>
 					</li>
 					<li>
 						<button
 							type="button"
-							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-lg group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 							aria-controls="dropdown-layouts"
 							data-collapse-toggle="dropdown-layouts"
 						>
 							<svg
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -129,14 +129,14 @@ import { url } from '../lib/data.js';
 							<li>
 								<a
 									href={url('layouts/stacked')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Stacked</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('layouts/sidebar')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Sidebar</a
 								>
 							</li>
@@ -145,12 +145,12 @@ import { url } from '../lib/data.js';
 					<li>
 						<button
 							type="button"
-							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-lg group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 							aria-controls="dropdown-crud"
 							data-collapse-toggle="dropdown-crud"
 						>
 							<svg
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -182,19 +182,19 @@ import { url } from '../lib/data.js';
 							<!-- if not (eq .Params.group crud) }}hidden {{ end }} -->
 							<li>
 								<!-- {{ if eq $page_slug "products" }} -->
-								<!-- bg-gray-100 dark:bg-gray-700 -->
+								<!-- bg-neutral-100 dark:bg-neutral-700 -->
 								<a
 									href={url('crud/products')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Products</a
 								>
 							</li>
 							<li>
 								<!--  {{ if eq $page_slug "users" }} -->
-								<!-- bg-gray-100 dark:bg-gray-700 -->
+								<!-- bg-neutral-100 dark:bg-neutral-700 -->
 								<a
 									href={url('crud/users')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Users</a
 								>
 							</li>
@@ -204,10 +204,10 @@ import { url } from '../lib/data.js';
 						<!-- {{ if eq $page_slug "settings" }} -->
 						<a
 							href={url('settings')}
-							class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center p-2 text-base text-neutral-900 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 						>
 							<svg
-								class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -225,12 +225,12 @@ import { url } from '../lib/data.js';
 					<li>
 						<button
 							type="button"
-							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-lg group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 							aria-controls="dropdown-pages"
 							data-collapse-toggle="dropdown-pages"
 						>
 							<svg
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -259,28 +259,28 @@ import { url } from '../lib/data.js';
 							<li>
 								<a
 									href={url('pages/pricing')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Pricing</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('pages/maintenance')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Maintenance</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('pages/404')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>404 not found</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('pages/500')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>500 server error</a
 								>
 							</li>
@@ -289,12 +289,12 @@ import { url } from '../lib/data.js';
 					<li>
 						<button
 							type="button"
-							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-lg group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 							aria-controls="dropdown-auth"
 							data-collapse-toggle="dropdown-auth"
 						>
 							<svg
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -323,35 +323,35 @@ import { url } from '../lib/data.js';
 							<li>
 								<a
 									href={url('authentication/sign-in')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Sign in</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('authentication/sign-up')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Sign up</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('authentication/forgot-password')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Forgot password</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('authentication/reset-password')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Reset password</a
 								>
 							</li>
 							<li>
 								<a
 									href={url('authentication/profile-lock')}
-									class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg pl-11 group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Profile lock</a
 								>
 							</li>
@@ -360,12 +360,12 @@ import { url } from '../lib/data.js';
 					<li>
 						<button
 							type="button"
-							class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+							class="flex items-center w-full p-2 text-base text-neutral-900 transition duration-75 rounded-lg group hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-700"
 							aria-controls="dropdown-playground"
 							data-collapse-toggle="dropdown-playground"
 						>
 							<svg
-								class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+								class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 								fill="currentColor"
 								viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg"
@@ -397,29 +397,29 @@ import { url } from '../lib/data.js';
 						<ul id="dropdown-playground" class="hidden space-y-2 py-2">
 							<li>
 								<!-- {{ if eq $page_slug "stacked" }} -->
-								<!--  bg-gray-100 dark:bg-gray-700 -->
+								<!--  bg-neutral-100 dark:bg-neutral-700 -->
 								<a
 									href={url('playground/stacked')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Stacked</a
 								>
 								<!-- <a
 									href={url('playground/kitchen-sink')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Kitchen Sink</a
 								> -->
 							</li>
 							<li>
 								<!-- {{ if eq $page_slug "sidebar" }} -->
-								<!--  bg-gray-100 dark:bg-gray-700 -->
+								<!--  bg-neutral-100 dark:bg-neutral-700 -->
 								<a
 									href={url('playground/sidebar')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>Sidebar</a
 								>
 								<a
 									href={url('playground/data')}
-									class="text-base text-gray-900 rounded-lg flex items-center p-2 group hover:bg-gray-100 transition duration-75 pl-11 dark:text-gray-200 dark:hover:bg-gray-700"
+									class="text-base text-neutral-900 rounded-lg flex items-center p-2 group hover:bg-neutral-100 transition duration-75 pl-11 dark:text-neutral-200 dark:hover:bg-neutral-700"
 									>API data</a
 								>
 							</li>
@@ -430,11 +430,11 @@ import { url } from '../lib/data.js';
 					<a
 						href={'https://github.com/themesberg/flowbite-astro-admin-dashboard'}
 						target="_blank"
-						class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+						class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 					>
 						<svg
 							aria-hidden="true"
-							class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+							class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 							fill="currentColor"
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 496 512"
@@ -448,10 +448,10 @@ import { url } from '../lib/data.js';
 					<a
 						href="https://flowbite.com/docs/getting-started/introduction/"
 						target="_blank"
-						class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+						class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 					>
 						<svg
-							class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+							class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 							xmlns="http://www.w3.org/2000/svg"
@@ -465,10 +465,10 @@ import { url } from '../lib/data.js';
 					<a
 						href="https://flowbite.com/docs/components/alerts/"
 						target="_blank"
-						class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+						class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 					>
 						<svg
-							class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+							class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 							xmlns="http://www.w3.org/2000/svg"
@@ -481,10 +481,10 @@ import { url } from '../lib/data.js';
 					<a
 						href="https://github.com/themesberg/flowbite-astro-admin-dashboard/issues"
 						target="_blank"
-						class="flex items-center p-2 text-base text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700"
+						class="flex items-center p-2 text-base text-neutral-900 transition duration-75 rounded-lg hover:bg-neutral-100 group dark:text-neutral-200 dark:hover:bg-neutral-700"
 					>
 						<svg
-							class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+							class="flex-shrink-0 w-6 h-6 text-neutral-500 transition duration-75 group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-white"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 							xmlns="http://www.w3.org/2000/svg"
@@ -499,12 +499,12 @@ import { url } from '../lib/data.js';
 			</div>
 		</div>
 		<div
-			class="absolute bottom-0 left-0 justify-center hidden w-full p-4 space-x-4 bg-white lg:flex dark:bg-gray-800"
+			class="absolute bottom-0 left-0 justify-center hidden w-full p-4 space-x-4 bg-white lg:flex dark:bg-neutral-800"
 			sidebar-bottom-menu
 		>
 			<a
 				href="#"
-				class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+				class="inline-flex justify-center p-2 text-neutral-500 rounded cursor-pointer hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-white"
 			>
 				<svg
 					class="w-6 h-6"
@@ -519,7 +519,7 @@ import { url } from '../lib/data.js';
 			<a
 				href="/settings/"
 				data-tooltip-target="tooltip-settings"
-				class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+				class="inline-flex justify-center p-2 text-neutral-500 rounded cursor-pointer hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-white"
 			>
 				<svg
 					class="w-6 h-6"
@@ -535,7 +535,7 @@ import { url } from '../lib/data.js';
 			<div
 				id="tooltip-settings"
 				role="tooltip"
-				class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+				class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-neutral-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-neutral-700"
 			>
 				Settings page
 				<div class="tooltip-arrow" data-popper-arrow></div>
@@ -543,7 +543,7 @@ import { url } from '../lib/data.js';
 			<button
 				type="button"
 				data-dropdown-toggle="language-dropdown"
-				class="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+				class="inline-flex justify-center p-2 text-neutral-500 rounded cursor-pointer hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-700 dark:hover:text-white"
 			>
 				<svg
 					class="h-5 w-5 rounded-full mt-0.5"
@@ -575,14 +575,14 @@ import { url } from '../lib/data.js';
 			</button>
 			<!-- Dropdown -->
 			<div
-				class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700"
+				class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-neutral-100 rounded shadow dark:bg-neutral-700"
 				id="language-dropdown"
 			>
 				<ul class="py-1" role="none">
 					<li>
 						<a
 							href="#"
-							class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+							class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:hover:text-white"
 							role="menuitem"
 						>
 							<div class="inline-flex items-center">
@@ -620,7 +620,7 @@ import { url } from '../lib/data.js';
 					<li>
 						<a
 							href="#"
-							class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+							class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:hover:text-white"
 							role="menuitem"
 						>
 							<div class="inline-flex items-center">
@@ -641,7 +641,7 @@ import { url } from '../lib/data.js';
 					<li>
 						<a
 							href="#"
-							class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+							class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:hover:text-white"
 							role="menuitem"
 						>
 							<div class="inline-flex items-center">
@@ -664,7 +664,7 @@ import { url } from '../lib/data.js';
 					<li>
 						<a
 							href="#"
-							class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
+							class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-600 dark:hover:text-white"
 							role="menuitem"
 						>
 							<div class="inline-flex items-center">
@@ -717,7 +717,7 @@ import { url } from '../lib/data.js';
 </aside>
 
 <div
-	class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90"
+	class="fixed inset-0 z-10 hidden bg-neutral-900/50 dark:bg-neutral-900/90"
 	id="sidebarBackdrop"
 >
 </div>
